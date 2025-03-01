@@ -1,0 +1,177 @@
+/* General styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f9fc;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+}
+
+h1 {
+    color: #2c3e50;
+    border-bottom: 2px solid #eaecef;
+    padding-bottom: 15px;
+    margin-top: 0;
+}
+
+h2, h3 {
+    color: #3498db;
+    margin-top: 20px;
+}
+
+/* Input section styling */
+#input-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+}
+
+#image-preview {
+    min-height: 200px;
+    border: 2px dashed #3498db !important;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f7ff;
+    margin-top: 15px !important;
+    overflow: hidden;
+}
+
+#image-preview img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+/* Button styling */
+#predict-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+    display: block;
+    margin: 20px 0;
+    width: 100%;
+}
+
+#predict-btn:hover {
+    background-color: #2980b9;
+}
+
+#predict-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.3);
+}
+
+/* Results section styling */
+#result-section {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+#prediction-result {
+    min-height: 50px;
+}
+
+#classification-info {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+#classification-info ul {
+    padding-left: 20px;
+}
+
+#classification-info li {
+    margin-bottom: 8px;
+}
+
+/* Probability bars styling */
+.probability-bar {
+    background-color: #e0e0e0;
+    height: 20px;
+    width: 100%;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.probability-fill {
+    height: 100%;
+    border-radius: 3px;
+}
+
+.probability-fill.positive {
+    background-color: #ff6b6b;
+}
+
+.probability-fill.negative {
+    background-color: #4caf50;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+    
+    #input-section, #result-section {
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+}
+
+/* Medical theme specific colors */
+.medical-positive {
+    color: #e74c3c;
+}
+
+.medical-negative {
+    color: #27ae60;
+}
+
+/* Loading indicator */
+.loading {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(52, 152, 219, 0.3);
+    border-radius: 50%;
+    border-top-color: #3498db;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
