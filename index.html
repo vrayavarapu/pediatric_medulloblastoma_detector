@@ -4,23 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pediatric Medulloblastoma Detection</title>
-    <!-- CSS Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-    <!-- TensorFlow.js library -->
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.18.0/dist/tf.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <div class="logo">MRI Analyzer</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="upload.html">Upload Scan</a></li>
+                <li><a href="results.html">Results</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="container">
-        <h1>Pediatric Medulloblastoma Detection</h1>
-        <div id="input-section">
-            <!-- Input fields will go here based on your model type -->
+        <div class="hero">
+            <h1>Pediatric Medulloblastoma Detection</h1>
+            <p>Advanced AI-powered tool for analyzing pediatric brain MRI scans</p>
+            <div class="hero-buttons">
+                <a href="upload.html" class="btn primary">Upload MRI Scan</a>
+                <a href="about.html" class="btn secondary">Learn More</a>
+            </div>
         </div>
-        <button id="predict-btn">Analyze MRI Scan</button>
-        <div id="result-section">
-            <h2>Results</h2>
-            <div id="prediction-result"></div>
+
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+                <h3>Advanced Detection</h3>
+                <p>TensorFlow-powered neural network trained on thousands of pediatric brain MRI scans</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Fast Analysis</h3>
+                <p>Get results in seconds with our optimized browser-based processing</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Privacy Focused</h3>
+                <p>All processing happens locally in your browser - no data is sent to our servers</p>
+            </div>
         </div>
     </div>
-    <script src="script.js"></script>
+
+    <footer>
+        <p>&copy; 2025 Pediatric Medulloblastoma Detection Tool. For research purposes only.</p>
+    </footer>
+
+    <script src="js/navigation.js"></script>
 </body>
 </html>
