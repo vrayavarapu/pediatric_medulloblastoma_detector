@@ -3,55 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pediatric Medulloblastoma Detection</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Home - AI Image Classifier</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">MRI Analyzer</div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="upload.html">Upload Scan</a></li>
-                <li><a href="results.html">Results</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <div class="container">
-        <div class="hero">
-            <h1>Pediatric Medulloblastoma Detection</h1>
-            <p>Advanced AI-powered tool for analyzing pediatric brain MRI scans</p>
-            <div class="hero-buttons">
-                <a href="upload.html" class="btn primary">Upload MRI Scan</a>
-                <a href="about.html" class="btn secondary">Learn More</a>
-            </div>
-        </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-        <div class="features">
-            <div class="feature-card">
-                <div class="feature-icon">🧠</div>
-                <h3>Advanced Detection</h3>
-                <p>TensorFlow-powered neural network trained on thousands of pediatric brain MRI scans</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">⚡</div>
-                <h3>Fast Analysis</h3>
-                <p>Get results in seconds with our optimized browser-based processing</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🔒</div>
-                <h3>Privacy Focused</h3>
-                <p>All processing happens locally in your browser - no data is sent to our servers</p>
-            </div>
-        </div>
-    </div>
+    <h1>AI Image Classifier</h1>
+    <p>Upload an image to classify whether Pediatric Medulloblastoma is present.</p>
+    
+    <input type="file" id="imageUpload" accept="image/*">
+    <br>
+    <img id="imagePreview" hidden>
+    <p id="prediction">Upload an image to classify.</p>
 
-    <footer>
-        <p>&copy; 2025 Pediatric Medulloblastoma Detection Tool. For research purposes only.</p>
-    </footer>
-
-    <script src="js/navigation.js"></script>
 </body>
 </html>
